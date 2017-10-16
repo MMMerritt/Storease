@@ -1,2 +1,2 @@
 # storEase
-### Michelle Merritt
+### **Michelle Merritt**
