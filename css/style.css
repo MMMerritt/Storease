@@ -131,6 +131,7 @@ header .hero {
    margin: 3em auto 0;
    max-width: 100%;
    height: auto;
+   opacity: 0.6;
  }
 
 /* BUTTONS */
@@ -288,7 +289,7 @@ header .hero {
   background:#175597;
   position: relative;
   padding:30px;
-  width:auto;
+  width: auto;
   margin:0;
 }
 .testimonials blockquote:after {
@@ -322,6 +323,22 @@ header .hero {
 .staggered-test {
   position: relative;
   top: 20px;
+}
+
+/* LAST-CALL */
+.last-call h2 {
+  border-top-style: solid;
+  text-align: center;
+  color: #175597;
+}
+.last-call p {
+  text-align: center;
+}
+.last-call a.btn {
+  text-align: center;
+  display: block;
+  position: relative;
+  padding: 10px 30px;
 }
 
 /* FOOTER */
