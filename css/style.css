@@ -134,6 +134,24 @@ header .hero {
    opacity: 0.6;
  }
 
+ @media only screen and (max-width: 767px) {
+   header nav {
+     padding: 1em 0;
+     text-align: center;
+   }
+   header nav ul {
+     display: inline;
+     text-align: center;
+     float: none;
+   }
+   header .hero h1 {
+     font-size: 36px;
+   }
+   header .hero p {
+     font-size: 16px;
+   }
+ }
+
 /* BUTTONS */
 .btn {
   border-radius: 4px;
@@ -150,28 +168,13 @@ header .hero {
   .btn {
     padding: 5px 15px;
   }
-  header nav {
-    padding: 1em 0;
-    text-align: center;
-  }
-  header nav ul {
-    display: inline;
-    text-align: center;
-    float: none;
-  }
-  header .hero h1 {
-    font-size: 36px;
-  }
-  header .hero p {
-    font-size: 16px;
-  }
 }
 
 /* BENEFITS */
 .benefits {
   text-align: center;
-  display: flex;
   position: relative;
+  padding-bottom: 600px;
 }
 .benefits ul {
   margin: 0 auto;
@@ -183,12 +186,24 @@ header .hero {
 }
 .benefits i {
   color: #398CE4;
-  font-size: 60px;
+  font-size: 48px;
   margin: 0;
   vertical-align: middle;
 }
 .benefits h2 {
   color: #398CE4;
+}
+
+@media (min-width: 768px) {
+  .benefits i {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .benefits {
+    padding-bottom: 200px;
+  }
 }
 
 /* PRICING */
@@ -211,6 +226,7 @@ header .hero {
 }
 .box {
   display: inline-block;
+  width: 260px;
   padding:0 15px 15px;
   background: #FFFFFF;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
@@ -322,24 +338,90 @@ header .hero {
   font-size: 13px;
   margin-top: 30px;
 }
-.staggered-test {
-  position: relative;
-  top: 20px;
+
+@media (min-width: 992px) {
+  .staggered-test {
+    position: relative;
+    top: 20px;
+  }
 }
 
 /* LAST-CALL */
+.last-call {
+  padding-top: 350px;
+}
+.last-call .container {
+  border-top-style: solid;
+  border-top-color: #e2e2e2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 725px;
+}
 .last-call h2 {
   text-align: center;
+  margin-top: 30px;
   color: #175597;
 }
 .last-call p {
   text-align: center;
 }
-.last-call a.btn {
+.last-call a {
   text-align: center;
   display: block;
   position: relative;
   padding: 10px 30px;
+  width: 200px;
+  clear: both;
+  margin-bottom: 50px;
+  margin-left: 20%;
+}
+
+@media (min-width: 480px) {
+  .last-call a {
+    margin-left: 25%;
+  }
+}
+
+@media (min-width: 453px) {
+  .last-call .container {
+    margin-top: 675px;
+  }
+}
+
+@media (min-width: 508px) {
+  .last-call .container {
+    margin-top: 600px;
+  }
+}
+
+@media (min-width: 661px) {
+  .last-call .container {
+    margin-top: 525px;
+  }
+}
+
+@media (min-width: 768px) {
+  .last-call a {
+    margin-left: 30%;
+  }
+}
+
+@media (min-width: 991px) {
+  .last-call .container {
+    margin-top: 80px;
+  }
+  .last-call a {
+    margin-left: 36%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .last-call .container {
+    margin-top: 20px;
+  }
+  .last-call a {
+    margin-left: 38%;
+  }
 }
 
 /* FOOTER */
@@ -357,7 +439,13 @@ footer p, footer nav ul {
   font-size:14px;
   font-weight:100;
   text-align: center;
-  margin: 10px auto 0;
+}
+footer p {
+  margin: 5px auto 0;
+}
+footer nav ul {
+  margin: 0 auto 0;
+  padding-left: 0;
 }
 footer nav ul li {
   list-style-type: none;
@@ -371,7 +459,7 @@ footer .right-footer-block {
   background-color: transparent;
 }
 footer .logo{
-  padding: 2.35em 0;
+  padding: 0;
   margin: 0 auto;
   display: block;
 }
@@ -380,17 +468,27 @@ footer .logo{
   footer{
      background-color: #3498DB;
      background-image: linear-gradient(to left,
-        #3498DB 0%, #3498DB 33.33337%, #175597 33.33337%, #175597 100%);
+        #3498DB 0%, #3498DB 33.33337%, #175597 25%, #175597 100%);
      height: 100px;
+   }
+   footer .left-footer-block {
+     margin: 0 0 20px;
+   }
+   footer .middle-footer-block {
+     width: 40%;
    }
    footer p, footer nav ul{
      padding: 2em 0;
      text-align: left;
+     margin: 10px auto 0;
    }
    footer .right-footer-block {
      background-color: #3498DB;
+     width: 20%;
+     padding-left: 20px;
    }
    footer .logo{
-     padding: 2em 0 2em 1.5em;
+     padding: 2em 0;
+     margin: 0;
    }
 }
