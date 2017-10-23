@@ -500,10 +500,11 @@ footer .logo{
   height: 100vh;
   width: 14.6666667%;
   color: #FFFFFF;
-  background: #175597;
+  background: #FFFFFF;
   float: left;
   position: fixed;
   display: block;
+  border-right: thin solid #E2E2E2;
 }
 .left-nav .site-logo {
   padding: 20px 0;
@@ -518,7 +519,7 @@ footer .logo{
   font-weight: 600;
   text-transform: uppercase;
   font-size: 12px;
-  color: #E2E2E2;
+  color: #175597;
   line-height: 15px;
 }
 .left-nav .items ul {
@@ -530,7 +531,7 @@ footer .logo{
   margin-bottom: 15px;
 }
 .left-nav .items ul li a {
-  color: #FFFFFF;
+  color: #175597;
   text-decoration: none;
   font-weight: 100;
 }
@@ -539,11 +540,19 @@ footer .logo{
   text-align: center;
   margin-right: 8px;
 }
+.left-nav .items .active {
+  background: #398CE4;
+  padding: 8px 8px 8px 3px;
+}
+.left-nav .items .active a {
+  color: #FFFFFF;
+  font-weight: normal;
+}
 
 /* LEFT NAVBAR SETTINGS */
 .left-nav .settings {
   position: absolute;
-  background: #22303E;
+  background: #175597;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -583,6 +592,7 @@ footer .logo{
 .content .header {
   margin: 0 1% 20px;
   padding-bottom: 60px;
+  border-bottom: thin solid #E2E2E2;
 }
 .content .header h1 {
   font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
@@ -612,7 +622,7 @@ footer .logo{
   overflow: hidden;
   padding: 20px;
 }
-@@media (min-width: 460px) {
+@media (min-width: 460px) {
   .content {
     padding: 1.5em 1%;
     float: right;
